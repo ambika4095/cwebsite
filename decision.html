@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   < LINK REL ="STYLESHEET" HREF ="STYLE.CSS">
+</head>
+<bodY>
+    
+
+ 
+    <h3>1. Check Positive, Negative, or Zero</h3>
+    ANSWER
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float num;
+    printf("Enter a number: ");
+    scanf("%f", &num);
+    
+    if (num > 0) {
+        printf("Positive\n");
+    } else if (num < 0) {
+        printf("Negative\n");
+    } else {
+        printf("Zero\n");
+    }
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter a number: -5.5
+Negative
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 2 -->
+    <h3>2. Check Odd or Even</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    
+    if (num % 2 == 0) {
+        printf("Even\n");
+    } else {
+        printf("Odd\n");
+    }
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter an integer: 7
+Odd
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 3 -->
+    <h3>3. Check Number of Digits (1 to 5)</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    num = abs(num);
+    
+    if (num >= 0 && num <= 9) printf("1 digit\n");
+    else if (num >= 10 && num <= 99) printf("2 digit\n");
+    else if (num >= 100 && num <= 999) printf("3 digit\n");
+    else if (num >= 1000 && num <= 9999) printf("4 digit\n");
+    else if (num >= 10000 && num <= 99999) printf("5 digit\n");
+    else printf("More than 5 digits or invalid\n");
+    
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter a number: 456
+3 digit
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 4 -->
+    <h3>4. Grading System (0-100)</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float score;
+    printf("Enter the score: ");
+    scanf("%f", &score);
+    
+    if (score >= 0 && score < 40) printf("Fail\n");
+    else if (score >= 40 && score < 60) printf("C grade\n");
+    else if (score >= 60 && score < 80) printf("B grade\n");
+    else if (score >= 80 && score <= 100) printf("A grade\n");
+    else printf("Invalid\n");
+    
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter the score: 75
+B grade
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 5 -->
+    <h3>5. Check if Decimal Number</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char str[50];
+    printf("Enter a number: ");
+    scanf("%s", str);
+    
+    char *dot = strchr(str, '.');
+    if (dot != NULL && *(dot + 1) != '\0' && strcmp(dot, ".0") != 0) {
+        printf("It is a decimal number\n");
+    } else {
+        printf("It is not a decimal number\n");
+    }
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter a number: 12.34
+It is a decimal number
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 6 -->
+    <h3>6. Invert Sign (Positive &lt;-&gt; Negative)</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float num;
+    printf("Enter a number: ");
+    scanf("%f", &num);
+    
+    float converted = num * -1;
+    printf("Converted number: %f\n", converted);
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter a number: -22
+Converted number: 22.000000
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 7 -->
+    <h3>7. Check if Character is an Alphabet</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;ctype.h&gt;
+int main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+    
+    if (isalpha(ch)) {
+        printf("It is an alphabet\n");
+    } else {
+        printf("It is not an alphabet\n");
+    }
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter a character: g
+It is an alphabet
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 8 -->
+    <h3>8. Square Negative / Increment Positive 20 Times</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float num;
+    printf("Enter a number: ");
+    scanf("%f", &num);
+    
+    if (num < 0) {
+        printf("Squared result: %f\n", num * num);
+    } else if (num > 0) {
+        printf("Incremented result: %f\n", num + 20);
+    } else {
+        printf("Zero remains 0\n");
+    }
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter a number: 5
+Incremented result: 25.000000
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 9 -->
+    <h3>9. Find Absolute Value</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float num;
+    printf("Enter a number: ");
+    scanf("%f", &num);
+    
+    if (num < 0) {
+        printf("Absolute value: %f\n", -num);
+    } else {
+        printf("Absolute value: %f\n", num);
+    }
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter a number: -45
+Absolute value: 45.000000
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 10 -->
+    <h3>10. Greater of Two Numbers</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float num1, num2;
+    printf("Enter first number: ");
+    scanf("%f", &num1);
+    printf("Enter second number: ");
+    scanf("%f", &num2);
+    
+    if (num1 > num2) printf("Greater number: %f\n", num1);
+    else if (num2 > num1) printf("Greater number: %f\n", num2);
+    else printf("Both numbers are equal\n");
+    
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter first number: 12
+Enter second number: 25
+Greater number: 25.000000
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 11 -->
+    <h3>11. Check Divisibility by 4</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    if (num % 4 == 0) {
+        printf("Divisible by 4\n");
+    } else {
+        printf("Not divisible by 4\n");
+    }
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter a number: 16
+Divisible by 4
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 12 -->
+    <h3>12. Check if 4 Characters are Equal</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    char c1, c2, c3, c4;
+    printf("Enter 4 characters: ");
+    scanf(" %c %c %c %c", &c1, &c2, &c3, &c4);
+    
+    if (c1 == c2 && c2 == c3 && c3 == c4) {
+        printf("All four characters are equal\n");
+    } else {
+        printf("Characters are not equal\n");
+    }
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter 4 characters: a a a a
+All four characters are equal
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 13 -->
+    <h3>13 & 17. Greater of Three Numbers</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float n1, n2, n3;
+    printf("Enter three numbers: ");
+    scanf("%f %f %f", &n1, &n2, &n3);
+    
+    if (n1 >= n2 && n1 >= n3) printf("Greater number: %f\n", n1);
+    else if (n2 >= n1 && n2 >= n3) printf("Greater number: %f\n", n2);
+    else printf("Greater number: %f\n", n3);
+    
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter three numbers: 10 50 30
+Greater number: 50.000000
+        </pre>
+    </details>
+    <hr>
+
+    <!-- Program 14 -->
+    <h3>14. Months based on Day counts</h3>
+    <details>
+        <summary>Click to expand Code & Output</summary>
+        <h4>C Source Code:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int days;
+    printf("Enter days (28, 29, 30, 31): ");
+    scanf("%d", &days);
+    
+    if (days == 30) printf("Months: April, June, September, November\n");
+    else if (days == 31) printf("Months: Jan, Mar, May, July, Aug, Oct, Dec\n");
+    else if (days == 28 || days == 29) printf("Month: February\n");
+    else printf("Invalid day input\n");
+    
+    return 0;
+}
+        </pre>
+        <h4>Expected Output:</h4>
+        <pre>
+Enter days (28, 29, 30, 31): 30
+Months: April, June, September, November
+        </pre>
+    </details>
+    <hr>
+
+    < /body>'
+</html>

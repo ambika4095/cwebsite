@@ -1,0 +1,125 @@
+             
+<html>
+<head>
+<title>String Programs</title>
+</head>
+<body>
+
+<h2>String  question</h2>
+< link rel ="stylesheet" href ="style.css">
+
+<h3>1. Question: Convert a string into uppercase.</h3>
+<p>Answer: #include <stdio.h>
+#include <conio.h>
+
+ void main() { 
+   char str[100];
+int i;
+clrscr();
+printf("Enter a string: ");
+
+for(i=0; str[i]!=''; i++) {
+if(str[i]>='a' && str[i]<='z')
+str[i] = str[i] - 32;
+}
+printf("Uppercase string: %s", str);
+getch();
+}
+Output:
+Enter a string: hello
+Uppercase string:HELLO;</p>
+<p>Output: HELLO</p>
+
+<h3>2. Question: Convert a string into lowercase.</h3>
+<p>Answer: strlwr(str);</p>
+<p>Output: hello</p>
+
+<h3>3. Question: Convert a string into sentence case.</h3>
+<p>Answer: First letter uppercase and remaining lowercase.</p>
+<p>Output: Hello world</p>
+
+<h3>4. Question: Convert a string into title case.</h3>
+<p>Answer: First letter of every word uppercase.</p>
+<p>Output: Hello World</p>
+
+<h3>5. Question: Convert a string into toggle case.</h3>
+<p>Answer: Change uppercase into lowercase and lowercase into uppercase.</p>
+<p>Output: hELLO</p>
+
+<h3>6. Question: Find the length of a string.</h3>
+<p>Answer: strlen(str);</p>
+<p>Output: Length = 5</p>
+
+<h3>7. Question: Compare two strings.</h3>
+<p>Answer: strcmp(str1, str2);</p>
+<p>Output: Strings are equal</p>
+
+<h3>8. Question: Concatenate two strings.</h3>
+<p>Answer: strcat(str1, str2);</p>
+<p>Output: HelloWorld</p>
+
+<h3>9. Question: Copy one string into another string.</h3>
+<p>Answer: strcpy(str2, str1);</p>
+<p>Output: Hello</p>
+
+<h3>10. Question: Print character according to index.</h3>
+<p>Answer: str[n];</p>
+<p>Output: Character = L</p>
+
+<h3>11. Question: Print each character on a new line.</h3>
+<p>Answer: Use for loop.</p>
+<p>Output:</p>
+<pre>
+H
+E
+L
+L
+O
+</pre>
+
+<h3>12. Question: Copy a string in reverse order.</h3>
+<p>Answer: Copy characters from last to first.</p>
+<p>Output: OLLEH</p>
+
+<h3>13. Question: Find difference between two strings.</h3>
+<p>Answer: Compare each character using a loop.</p>
+<p>Output: A != B</p>
+
+<h3>14. Question: Check whether a character exists in a string.</h3>
+<p>Answer: strchr(str, ch);</p>
+<p>Output: Character exists</p>
+
+<h3>15. Question: Find the index of a character.</h3>
+<p>Answer: strchr(str, ch) - str;</p>
+<p>Output: Index = 2</p>
+
+<h3>16. Question: Count all vowels in a string.</h3>
+<p>Answer: Check a, e, i, o, u.</p>
+<p>Output: Total vowels = 2</p>
+
+<h3>17. Question: Print character at given index.</h3>
+<p>Answer: str[n];</p>
+<p>Output: Character = L</p>
+
+<h3>18. Question: Check string palindrome using reverse.</h3>
+<p>Answer: Compare original string with reverse string.</p>
+<p>Output: String is palindrome</p>
+
+<h3>19. Question: Enter student roll number, name, class and marks of 5 subjects.</h3>
+<p>Answer: Use structure (struct).</p>
+<p>Output:</p>
+<pre>
+Roll No: 101
+Name: Rahul
+Class: BCA
+Subject 1: 80
+Subject 2: 75
+Subject 3: 85
+Subject 4: 90
+Subject 5: 70
+Total Marks: 400
+Percentage: 80%
+</pre>
+
+</body>
+</html>

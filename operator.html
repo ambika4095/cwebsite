@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> operator question </title>
+</head>
+
+<body>
+
+< link rel ="stylesheet"  href =" style.css"
+
+<hr>
+
+<h2>1. Pre-Increment</h2>
+<p><b>Question:</b> Write a program to show Pre-Increment.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+int main()
+{
+    int a=5;
+    printf("%d",++a);
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>6</pre>
+
+<hr>
+
+<h2>2. Post-Increment</h2>
+<p><b>Question:</b> Write a program to show Post-Increment.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+int main()
+{
+    int a=5;
+    printf("%d",a++);
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>5</pre>
+
+<hr>
+
+<h2>3. Pre-Decrement</h2>
+<p><b>Question:</b> Write a program to show Pre-Decrement.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+int main()
+{
+    int a=5;
+    printf("%d",--a);
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>4</pre>
+
+<hr>
+
+<h2>4. Post-Decrement</h2>
+<p><b>Question:</b> Write a program to show Post-Decrement.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+int main()
+{
+    int a=5;
+    printf("%d",a--);
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>5</pre>
+
+<hr>
+
+<h2>5. Arithmetic Operations</h2>
+<p><b>Question:</b> Write a program to perform Addition, Subtraction, Multiplication, Division and Remainder.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+int main()
+{
+    int a=10,b=5;
+
+    printf("Addition=%d\n",a+b);
+    printf("Subtraction=%d\n",a-b);
+    printf("Multiplication=%d\n",a*b);
+    printf("Division=%d\n",a/b);
+    printf("Remainder=%d",a%b);
+
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>
+Addition=15
+Subtraction=5
+Multiplication=50
+Division=2
+Remainder=0
+</pre>
+
+<hr>
+
+<h2>6. Last Digit of Number</h2>
+<p><b>Question:</b> Write a program to print the last digit of a number.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+int main()
+{
+    int n=12345;
+    printf("Last digit=%d",n%10);
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>Last digit=5</pre>
+
+<hr>
+
+<h2>7. Right Side of Decimal</h2>
+<p><b>Question:</b> Enter a decimal number and print the right side of decimal point.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+int main()
+{
+    float n=45.67;
+    int x;
+    x=(int)(n*100)%100;
+    printf("%d",x);
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>67</pre>
+
+<hr>
+
+<h2>8. Cube of Number</h2>
+<p><b>Question:</b> Write a program to find cube of a number.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n=5;
+    printf("%.0f",pow(n,3));
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>125</pre>
+
+<hr>
+
+<h2>9. Round Off Number</h2>
+<p><b>Question:</b> Write a program to round off a float number.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float n=12.7;
+    printf("%.0f",round(n));
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>13</pre>
+
+<hr>
+
+<h2>10. Lowercase to Uppercase</h2>
+<p><b>Question:</b> Write a program to convert lowercase character into uppercase.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char ch='a';
+    printf("%c",toupper(ch));
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>A</pre>
+
+<hr>
+
+<h2>11. Average of Student Marks</h2>
+<p><b>Question:</b> Write a program to calculate average of student marks.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+int main()
+{
+    int a=80,b=70,c=90;
+    float avg;
+
+    avg=(a+b+c)/3.0;
+
+    printf("%.2f",avg);
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>80.00</pre>
+
+<hr>
+
+<h2>12. Simple Interest</h2>
+<p><b>Question:</b> Write a program to calculate Simple Interest.</p>
+<h3>Answer:</h3>
+<pre>
+#include<stdio.h>
+int main()
+{
+    float p=10000,r=5,t=2,si;
+
+    si=(p*r*t)/100;
+
+    printf("%.2f",si);
+    return 0;
+}
+</pre>
+<h3>Output:</h3>
+<pre>1000.00</pre>
+
+
+
+</body>
+</html>

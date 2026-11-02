@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ 
+   <title>Nested Loop Questions</title>
+   
+ <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   
+ <h1>Nested Loop Questions</h1>
+
+  
+  <div class="question">
+    
+    <h3>Question 1</h3>
+    
+    <p>Write a C program to print this pattern:</p>
+
+  
+      <pre>11111
+11111
+11111</pre>
+
+     
+   <button onclick="document.getElementById('answer').hidden = false">
+ 
+           Start Solving
+      
+  </button>
+
+       
+ <div id="answer" hidden>
+      
+      <h3>Solution</h3>
+   
+         <pre>
+#include &lt;stdio.h&gt;
+int main()
+ {
+  
+  for(int i=1; i<=3; i++) {
+ 
+       for(int j=1; j<=5; j++) {
+  
+          printf("1");
+    
+    }
+        printf("\n");
+   
+ }
+    return 0;
+}
+   
+         </pre>
+         
+   <h3>Output</h3>
+      
+      <pre>11111
+11111
+11111</pre>
+  
+      </div>
+   
+ </div>
+
+  
+  <a href="index1.html">Back to Home</a>
+
+
+</body>
+
+</html>
